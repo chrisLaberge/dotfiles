@@ -1,0 +1,2444 @@
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}
+/* General text */
+* {
+  color: #ffffff; /* White text */
+  background: transparent;
+  font-family: monospace, monospace;
+}
+
+/* Spotify player box styling */
+#custom-playerctl {
+  color: #f5f5dc; /* Beige text */
+  padding: 0 12px;
+  border: 1px solid #8b7355; /* Dark beige border */
+  border-radius: 6px;
+  margin: 0 8px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Borders on top and bottom of bar */
+#waybar {
+  border-top: 1px solid #555555; /* Medium grey */
+  border-bottom: 1px solid #555555; /* Medium grey */
+}
+
+/* Kanji workspaces style */
+#custom-workspaces {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f5f5dc; /* Beige */
+  margin: 0 10px;
+}
+
+/* Inactive workspace kanji */
+.workspace.inactive {
+  color: #888888; /* Light grey */
+}
+
+/* Hover highlight for modules */
+.module:hover {
+  border-color: #8b7355; /* Dark beige */
+  color: #f5f5dc;
+}
+
+/* Tray icons size */
+#tray {
+  margin-left: 10px;
+}
+
+/* Taskbar icon size */
+#wlr-taskbar {
+  margin-left: 10px;
+}

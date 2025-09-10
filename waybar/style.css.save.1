@@ -1,0 +1,371 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome", "Noto Sans CJK JP";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+{
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": false,
+  "ipc": false,
+  "reload_style_on_change": true,
+  "spacing": 8,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/playerctl"
+  ],
+
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "cpu",
+    "temperature",
+    "backlight",
+    "clock",
+    "custom/notification",
+    "custom/power"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+        "1": "一",
+        "2": "二", 
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九"
+    }
+},
+
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "  ",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1s && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": " {load}%"
+  },
+
+  "temperature": {
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 10,
+    "format-critical": " {temperatureC}°C",
+    "format": ""
+  },
+
+  "backlight": {
+    "interval": 2,
+    "device": "amdgpu_bl0",
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰖔", "󰖨"],
+    "on-scroll-up": "brightnessctl set +1%",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "smooth-scrolling-threshold": 1
+  },
+
+  "tray": {
+    "interval": 1,
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  "network": {
+    "interval": 2,
+    "format-wifi": "{essid} ({signalStrength}%)\uf1eb",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-linked": "\uf059 No IP ({ifname})",
+    "format-disconnected": "\uf071 Disconnected",
+    "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
+    "format-alt": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}"
+  },
+
+  "clock": {
+    "format": "{:%H:%M} ",
+    "format-alt": "{:%A, %b %d} ",
+    "tooltip-format": "{:%Y}",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 2",
+    "on-scroll-down": "pamixer -d 2",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    }
+  },
+
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wlogout -b 6 --protocol layer-shell",
+    "menu": "on-click-right",
+    "menu-file": "~/.config/maomao/waybar/battery_menu.xml",
+    "menu-actions": {
+      "performance": "bash ~/.config/maomao/scripts/power-profile  --performance",
+      "schedutil": "bash ~/.config/maomao/scripts/power-profile --schedutil"
+    }
+  },
+
+  "custom/playerctl": {
+    "format": "{2} <span>{0}</span>",
+    "return-type": "json",
+    "exec": "playerctl -p spotify metadata -f '{\"text\": \"{{markup_escape(title)}} - {{markup_escape(artist)}}  {{ duration(position) }}/{{ duration(mpris:length) }}\", \"tooltip\": \"{{markup_escape(title)}} - {{markup_escape(artist)}}  {{ duration(position) }}/{{ duration(mpris:length) }}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "tooltip": false,
+    "on-click-middle": "playerctl -p spotify previous",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "playerctl -p spotify next",
+    "on-click-forward": "playerctl -p spotify position 10+",
+    "on-click-backward": "playerctl -p spotify position 10-",
+    "on-scroll-up": "playerctl -p spotify volume 0.02+",
+    "on-scroll-down": "playerctl -p spotify volume 0.02-",
+    "format-icons": {
+      "Paused": " ",
+      "Playing": " "
+    }
+  }
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces with kanji */
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #888888;
+    border: 2px solid #ded3b3;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+    color: #f5f5dc;
+    border-color: #8b7355;
+}
+
+#workspaces button.focused {
+    background-color: transparent;
+    color: #f5f5dc;
+    border-color: #8b7355;
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+/* Player control styling */
+#custom-playerctl {
+    background-color: transparent;
+    color: #f5f5dc;
+    border: 2px solid #ded3b3;
+    border-radius: 6px;
+    padding: 0 12px;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+#custom-playerctl:hover {
+    border-color: #8b7355;
+}
+
+#custom-playerctl.Playing {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+#custom-playerctl.Paused {
+    background-color: transparent;
+    color: #555555;
+    border-color: #ded3b3;
+}
+
+/* Right side modules */
+#tray,
+#network,
+#pulseaudio,
+#cpu,
+#temperature,
+#backlight,
+#clock,
+#custom-notification,
+#custom-power {
+    padding: 0 8px;
+    margin: 0 2px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ded3b3;
+    border-radius: 4px;
+}
+
+#tray:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#temperature:hover,
+#backlight:hover,
+#clock:hover,
+#custom-notification:hover,
+#custom-power:hover {
+    background-color: transparent;
+    border-color: #8b7355;
+}
+
+/* Clock special styling */
+#clock {
+    color: #f5f5dc;
+    font-weight: bold;
+    border-color: #ded3b3;
+}
+
+#clock:hover {
+    border-color: #8b7355;
+}
+
+/* CPU and temperature warnings */
+#cpu.warning {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+#cpu.critical {
+    background-color: transparent;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+#temperature.critical {
+    background-color: transparent;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+/* Network states */
+#network.disconnected {
+    color: #888888;
+    border-color: #ded3b3;
+}
+
+#network.ethernet {
+    color: #8b7355;
+    border-color: #ded3b3;
+}
+
+#network.wifi {
+    color: #f5f5dc;
+    border-color: #ded3b3;
+}
+
+/* Audio states */
+#pulseaudio.muted {
+    color: #888888;
+    border-color: #ded3b3;
+}
+
+/* Power button */
+#custom-power {
+    color: #8b7355;
+    border-color: #ded3b3;
+    font-weight: bold;
+}
+
+#custom-power:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+/* Notification styling */
+#custom-notification {
+    color: #f5f5dc;
+    border-color: #ded3b3;
+}
+
+/* Tray */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+    border-color: #8b7355;
+}

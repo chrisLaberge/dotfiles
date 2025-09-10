@@ -1,0 +1,3112 @@
+# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 280, 200  # bigger rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 50
+    halign = center
+    valign = center
+}
+
+# Input field below profile picture
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -120
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP CENTER - Location
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg2
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -50
+    halign = center
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname only
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone only
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}# Gruvbox Hyprlock Configuration
+# Edge-distributed layout with rectangular profile picture
+# Focused on terminal beige/grey palette
+
+# Terminal-inspired Color Palette
+$bg = rgb(282828)           # dark grey bg
+$bg0 = rgb(1d2021)          # darker grey bg
+$bg1 = rgb(3c3836)          # medium grey
+$bg2 = rgb(504945)          # lighter grey
+$fg = rgb(ebdbb2)           # white/cream
+$fg2 = rgb(d5c4a1)          # light beige
+$fg3 = rgb(bdae93)          # medium beige
+$fg4 = rgb(a89984)          # dark beige
+$accent = rgb(fabd2f)       # minimal yellow accent
+$subtle = rgb(928374)       # muted grey
+
+background {
+    monitor =
+    path = ~/Pictures/wallpapers/gruvbox.png
+    color = $bg0
+    
+    # Blur effect
+    blur_passes = 2
+    blur_size = 8
+    noise = 0.0117
+    contrast = 0.8916
+    brightness = 0.8172
+    vibrancy = 0.1696
+    vibrancy_darkness = 0.0
+}
+
+# Profile Picture (center) - rectangular
+image {
+    monitor =
+    path = ~/Pictures/Terminal/profile.jpg
+    size = 200, 150  # rectangular dimensions
+    rounding = 12    # subtle rounded corners
+    border_size = 2
+    border_color = $fg3
+    position = 0, 80
+    halign = center
+    valign = center
+}
+
+# Username below profile picture
+label {
+    monitor =
+    text = $USER
+    color = $fg
+    font_size = 28
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, -20
+    halign = center
+    valign = center
+}
+
+# Input field below username
+input-field {
+    monitor =
+    size = 350, 50
+    outline_thickness = 2
+    dots_size = 0.33
+    dots_spacing = 0.15
+    dots_center = true
+    dots_rounding = -1
+    outer_color = $bg2
+    inner_color = $bg1
+    font_color = $fg
+    fade_on_empty = true
+    fade_timeout = 1000
+    placeholder_text = <span foreground="##$fg3">Enter Password</span>
+    hide_input = false
+    rounding = 12
+    check_color = $fg2
+    fail_color = $accent
+    fail_text = <span foreground="##$accent">Authentication Failed</span>
+    fail_transition = 300
+    capslock_color = $accent
+    numlock_color = -1
+    bothlock_color = -1
+    invert_numlock = false
+    swap_font_color = false
+    
+    position = 0, -100
+    halign = center
+    valign = center
+}
+
+# TOP LEFT - Time
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%H:%M")"
+    color = $fg
+    font_size = 64
+    font_family = JetBrainsMono Nerd Font Bold
+    position = 50, -50
+    halign = left
+    valign = top
+}
+
+# TOP LEFT - Date (below time)
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%A")"
+    color = $fg2
+    font_size = 22
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, -130
+    halign = left
+    valign = top
+}
+
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%B %d, %Y")"
+    color = $fg3
+    font_size = 16
+    font_family = JetBrainsMono Nerd Font
+    position = 50, -155
+    halign = left
+    valign = top
+}
+
+# TOP RIGHT - Weather
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=1" | head -c -1
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = -50, -50
+    halign = right
+    valign = top
+}
+
+# TOP RIGHT - Temperature details
+label {
+    monitor =
+    text = cmd[update:300000] curl -s "wttr.in/?format=%t" 
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, -75
+    halign = right
+    valign = top
+}
+
+# BOTTOM LEFT - Hostname
+label {
+    monitor =
+    text = $(hostname)
+    color = $fg2
+    font_size = 18
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 50, 50
+    halign = left
+    valign = bottom
+}
+
+label {
+    monitor =
+    text = Fedora Linux
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = 50, 75
+    halign = left
+    valign = bottom
+}
+
+# BOTTOM RIGHT - Time zone / location
+label {
+    monitor =
+    text = cmd[update:1000] echo "$(date +"%Z %z")"
+    color = $fg3
+    font_size = 14
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 50
+    halign = right
+    valign = bottom
+}
+
+label {
+    monitor =
+    text = Montreal, QC
+    color = $fg4
+    font_size = 12
+    font_family = JetBrainsMono Nerd Font
+    position = -50, 75
+    halign = right
+    valign = bottom
+}
+
+# CENTER BOTTOM - Status indicators
+label {
+    monitor =
+    text = ◦ ◦ ◦ ◦ ◦
+    color = $subtle
+    font_size = 10
+    font_family = JetBrainsMono Nerd Font
+    position = 0, -180
+    halign = center
+    valign = center
+}
+
+# Caps Lock indicator
+label {
+    monitor =
+    text = cmd[update:1000] echo "$([ $(cat /sys/class/leds/input*::capslock/brightness 2>/dev/null) = "1" ] && echo "CAPS LOCK" || echo "")"
+    color = $accent
+    font_size = 11
+    font_family = JetBrainsMono Nerd Font Medium
+    position = 0, 120
+    halign = center
+    valign = bottom
+}

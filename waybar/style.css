@@ -1,0 +1,209 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome", "Noto Sans CJK JP";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    background: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Force complete transparency */
+#waybar {
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces with kanji */
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #888888;
+    border: 2px solid #ded3b3;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+    color: #f5f5dc;
+    border-color: #8b7355;
+}
+
+#workspaces button.focused {
+    background-color: transparent;
+    color: #f5f5dc;
+    border-color: #8b7355;
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+/* Player control styling */
+#custom-playerctl {
+    background-color: transparent;
+    color: #f5f5dc;
+    border: 2px solid #ded3b3;
+    border-radius: 6px;
+    padding: 0 12px;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+#custom-playerctl:hover {
+    border-color: #8b7355;
+}
+
+#custom-playerctl.Playing {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ded3b3
+}
+
+#custom-playerctl.Paused {
+    background-color: transparent;
+    color: #555555;
+    border-color: #8b7355;
+}
+
+
+
+/* Right side modules */
+#tray,
+#network,
+#pulseaudio,
+#cpu,
+#temperature,
+#backlight,
+#clock,
+#custom-notification,
+#custom-power {
+    padding: 0 8px;
+    margin: 0 2px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ded3b3;
+    border-radius: 4px;
+}
+
+#tray:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#temperature:hover,
+#backlight:hover,
+#clock:hover,
+#custom-notification:hover,
+#custom-power:hover {
+    background-color: transparent;
+    border-color: #8b7355;
+}
+
+/* Clock special styling */
+#clock {
+    color: #f5f5dc;
+    font-weight: bold;
+    border-color: #ded3b3;
+}
+
+#clock:hover {
+    border-color: #8b7355;
+}
+
+/* CPU and temperature warnings */
+#cpu.warning {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+#cpu.critical {
+    background-color: transparent;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+#temperature.critical {
+    background-color: transparent;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+/* Network states */
+#network.disconnected {
+    color: #888888;
+    border-color: #ded3b3;
+}
+
+#network.ethernet {
+    color: #8b7355;
+    border-color: #ded3b3;
+}
+
+#network.wifi {
+    color: #f5f5dc;
+    border-color: #ded3b3;
+}
+
+/* Audio states */
+#pulseaudio.muted {
+    color: #888888;
+    border-color: #ded3b3;
+}
+
+/* Power button */
+#custom-power {
+    color: #8b7355;
+    border-color: #ded3b3;
+    font-weight: bold;
+}
+
+#custom-power:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8b7355;
+}
+
+/* Notification styling */
+#custom-notification {
+    color: #f5f5dc;
+    border-color: #ded3b3;
+}
+
+/* Tray */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+    border-color: #8b7355;
+}
